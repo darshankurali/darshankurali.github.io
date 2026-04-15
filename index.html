@@ -139,6 +139,24 @@
   .fade-up{opacity:0;transform:translateY(28px);transition:all 0.75s ease;}
   .fade-up.visible{opacity:1;transform:translateY(0);}
   @media(max-width:900px){nav{padding:16px 24px;}.nav-links{display:none;}.hero{padding:110px 24px 60px;}.about{grid-template-columns:1fr;padding:80px 24px;gap:48px;}.skills-s,.proj-s,.certs-s{padding:80px 24px;}.pgg{grid-template-columns:1fr;}.pc.s2{grid-column:span 1;grid-template-columns:1fr;}.pvis{display:none;}.contact-s{padding:80px 24px;}footer{padding:24px;flex-direction:column;gap:10px;text-align:center;}}
+
+.exp-s{padding:100px 64px;background:var(--bg)}
+.eg{margin-top:40px}
+.ec{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid var(--border);border-radius:18px;padding:34px;position:relative;overflow:hidden}
+.ec:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(167,139,250,0.14),transparent 38%);pointer-events:none}
+.exp-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;margin-bottom:18px;position:relative;z-index:1}
+.exp-head h3{font-family:var(--font-serif);font-size:30px;line-height:1.1;font-weight:600}
+.exp-date{font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.14em;text-transform:uppercase;padding-top:6px}
+.more-projects-title{margin-top:72px;margin-bottom:20px;font-family:var(--font-serif);font-size:clamp(28px,3.5vw,42px)}
+.more-projects-sub{color:var(--muted);font-size:14px;max-width:780px;margin-bottom:28px;line-height:1.8}
+.pgg-extended{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.pc.compact{padding:30px;min-height:100%}
+.pc.compact .ptit{font-size:22px}
+.pc.compact .pdesc{font-size:13px;margin-bottom:18px}
+.pc.compact .pico{font-size:28px}
+.pc.compact .parrow{top:28px;right:28px}
+@media (max-width:900px){.exp-s{padding:80px 24px}.exp-head{flex-direction:column}.more-projects-title{margin-top:52px}}
+
 </style>
 </head>
 <body>
@@ -149,7 +167,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li>
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#contact" class="nav-cta">Hire Me</a></li>
   </ul>
@@ -175,7 +193,7 @@
   <div class="hero-stats">
     
     <div class="stat"><span class="sn">8+</span><span class="sl">Certifications</span></div>
-    <div class="stat"><span class="sn">6+</span><span class="sl">Projects Built</span></div>
+    <div class="stat"><span class="sn">15+</span><span class="sl">Projects Built</span></div>
   </div>
 </section>
 
@@ -234,7 +252,7 @@
     <h2 class="stitle">Technical Stack</h2>
   </div>
   <div class="sg">
-    <div class="sc c-nlp fade-up"><div class="si i-nlp">✨</div><h3>Gen AI &amp; LLMs</h3><div class="tags"><span class="tag">LLMs</span><span class="tag">Transformers</span><span class="tag">RAG</span><span class="tag">CrewAI</span><span class="tag">Embeddings</span><span class="tag">Text Generation</span><span class="tag">Multi-Agent</span><span class="tag">Tokenization</span></div></div>
+    <div class="sc c-nlp fade-up"><div class="si i-nlp">✨</div><h3>Gen AI &amp; LLMs</h3><div class="tags"><span class="tag">LLMs</span><span class="tag">Transformers</span><span class="tag">RAG</span><span class="tag">CrewAI</span><span class="tag">Embeddings</span><span class="tag">Text Generation</span><span class="tag">Multi-Agent</span><span class="tag">Tokenization</span><span class="tag">STREAMLIT</span><span class="tag">GCP</span><span class="tag">FLASK</span></div></div>
     <div class="sc c-ml fade-up"><div class="si i-ml">🤖</div><h3>Machine Learning</h3><div class="tags"><span class="tag">Supervised Learning</span><span class="tag">Unsupervised</span><span class="tag">Random Forest</span><span class="tag">SVM</span><span class="tag">Cross-Validation</span><span class="tag">Feature Engineering</span><span class="tag">ROC-AUC</span></div></div>
     <div class="sc c-dl fade-up"><div class="si i-dl">🧠</div><h3>Deep Learning</h3><div class="tags"><span class="tag">CNN</span><span class="tag">RNN / LSTM</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">Keras</span><span class="tag">Backpropagation</span><span class="tag">Adam / SGD</span></div></div>
     <div class="sc c-cv fade-up"><div class="si i-cv">👁️</div><h3>Computer Vision</h3><div class="tags"><span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">Image Classification</span><span class="tag">Object Detection</span><span class="tag">Gesture Recognition</span></div></div>
@@ -334,7 +352,157 @@
   </div>
 </section>
 
-<section class="certs-s" id="certifications">
+
+<section class="exp-s" id="experience">
+  <div class="sl2">EXPERIENCE</div>
+  <h2 class="stitle">Internship Journey</h2>
+  <div class="eg">
+    <div class="ec fade-up">
+      <div class="exp-head">
+        <div>
+          <div class="gbadge">DATA SCIENCE INTERN</div>
+          <h3>Prinston Smart Engineers</h3>
+        </div>
+        <div class="exp-date">Feb 2026 — May 2026</div>
+      </div>
+      <p class="pdesc">Worked as a Data Science Intern, contributing to applied AI and analytics workflows, model experimentation, and practical project development in a professional engineering environment.</p>
+      <div class="ptech">
+        <span class="pt">DATA SCIENCE</span>
+        <span class="pt">PYTHON</span>
+        <span class="pt">ML WORKFLOWS</span>
+        <span class="pt">ANALYTICS</span>
+      </div>
+    </div>
+  <h3 class="more-projects-title fade-up">Latest Project Builds</h3><p class="more-projects-sub fade-up">Added without removing any existing work, these new builds extend the same visual language of the portfolio while highlighting your recent AI, machine learning, NLP, computer vision, IoT, and data science projects.</p><div class="pgg-extended"><a class="pc compact fade-up" href="https://github.com/darshankurali/AI-Sql-Query-Generator" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggp"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 01</div>
+      <span class="pico">✦</span>
+      <h3 class="ptit">AI SQL Query Generator</h3>
+      <p class="pdesc">Builds SQL queries from natural language prompts using AI, making database interaction faster for non-SQL users.</p>
+      <div class="ptech"><span class="pt">NLP</span><span class="pt">SQL</span><span class="pt">STREAMLIT</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/healthcare-anomaly-detection" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggb"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 02</div>
+      <span class="pico">✹</span>
+      <h3 class="ptit">Healthcare Anomaly Detection</h3>
+      <p class="pdesc">Detects unusual healthcare patterns with machine learning for proactive monitoring and risk identification.</p>
+      <div class="ptech"><span class="pt">ML</span><span class="pt">ANOMALY DETECTION</span><span class="pt">PYTHON</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/distributed-ml-pipeline" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggpk"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 03</div>
+      <span class="pico">⬡</span>
+      <h3 class="ptit">Distributed ML Pipeline</h3>
+      <p class="pdesc">Implements a scalable machine learning workflow for distributed training, orchestration, and model processing.</p>
+      <div class="ptech"><span class="pt">MLOPS</span><span class="pt">DISTRIBUTED SYSTEMS</span><span class="pt">GCP</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/AI-Knowledge-Graph-with-Semantic-Reasoning-Relationship-Inference" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggg2"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 04</div>
+      <span class="pico">◈</span>
+      <h3 class="ptit">AI Knowledge Graph with Semantic Reasoning</h3>
+      <p class="pdesc">Creates a knowledge graph system with semantic reasoning and relationship inference for intelligent data discovery.</p>
+      <div class="ptech"><span class="pt">KNOWLEDGE GRAPH</span><span class="pt">AI</span><span class="pt">GRAPH ANALYTICS</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Speech-to-Action-AI-System-using-Python-Streamlit" target="_blank" rel="noopener noreferrer">
+      <div class="pglow gggold"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 05</div>
+      <span class="pico">◉</span>
+      <h3 class="ptit">Speech-to-Action AI System</h3>
+      <p class="pdesc">Transforms spoken commands into executable actions through a Streamlit-based AI workflow.</p>
+      <div class="ptech"><span class="pt">SPEECH AI</span><span class="pt">STREAMLIT</span><span class="pt">PYTHON</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Advanced-Rag-Multiturn" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggp"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 06</div>
+      <span class="pico">✧</span>
+      <h3 class="ptit">Advanced RAG Multiturn</h3>
+      <p class="pdesc">Supports multi-turn retrieval-augmented conversations with context-aware reasoning and response generation.</p>
+      <div class="ptech"><span class="pt">RAG</span><span class="pt">LLM</span><span class="pt">CONVERSATIONAL AI</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Smart-Predictive-Maintenance-System-using-AI-IoT-Data" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggb"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 07</div>
+      <span class="pico">⚙</span>
+      <h3 class="ptit">Smart Predictive Maintenance System</h3>
+      <p class="pdesc">Uses AI and IoT signals to predict maintenance needs and reduce downtime in smart systems.</p>
+      <div class="ptech"><span class="pt">IOT</span><span class="pt">PREDICTIVE ANALYTICS</span><span class="pt">AI</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Multimodal-Image-Captioning" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggpk"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 08</div>
+      <span class="pico">◌</span>
+      <h3 class="ptit">Multimodal Image Captioning</h3>
+      <p class="pdesc">Generates descriptive captions from images using multimodal deep learning techniques.</p>
+      <div class="ptech"><span class="pt">COMPUTER VISION</span><span class="pt">DEEP LEARNING</span><span class="pt">NLP</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/IoT-Sensor-Anomaly-Detection" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggg2"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 09</div>
+      <span class="pico">⬢</span>
+      <h3 class="ptit">IoT Sensor Anomaly Detection</h3>
+      <p class="pdesc">Monitors IoT sensor streams to identify anomalies and improve system reliability.</p>
+      <div class="ptech"><span class="pt">IOT</span><span class="pt">ANOMALY DETECTION</span><span class="pt">TIME SERIES</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Resume-Screening" target="_blank" rel="noopener noreferrer">
+      <div class="pglow gggold"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 10</div>
+      <span class="pico">▣</span>
+      <h3 class="ptit">Resume Screening</h3>
+      <p class="pdesc">Automates resume evaluation to match candidate profiles against job requirements efficiently.</p>
+      <div class="ptech"><span class="pt">NLP</span><span class="pt">CLASSIFICATION</span><span class="pt">HR TECH</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Sentiment-Analysis-Dashboard" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggp"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 11</div>
+      <span class="pico">◐</span>
+      <h3 class="ptit">Sentiment Analysis Dashboard</h3>
+      <p class="pdesc">Visualizes and analyzes sentiment patterns from text data through an interactive dashboard.</p>
+      <div class="ptech"><span class="pt">SENTIMENT ANALYSIS</span><span class="pt">DASHBOARD</span><span class="pt">STREAMLIT</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Recommendation-Engine" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggb"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 12</div>
+      <span class="pico">◎</span>
+      <h3 class="ptit">Recommendation Engine</h3>
+      <p class="pdesc">Builds personalized recommendation workflows for suggesting relevant items based on user behavior.</p>
+      <div class="ptech"><span class="pt">RECOMMENDATION SYSTEMS</span><span class="pt">ML</span><span class="pt">FLASK</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Time-Series-Stock-Forecasting" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggpk"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 13</div>
+      <span class="pico">↗</span>
+      <h3 class="ptit">Time Series Stock Forecasting</h3>
+      <p class="pdesc">Forecasts stock trends using time-series models and data-driven predictive techniques.</p>
+      <div class="ptech"><span class="pt">TIME SERIES</span><span class="pt">FORECASTING</span><span class="pt">DATA SCIENCE</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Computer-Vision-Inspection" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggg2"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 14</div>
+      <span class="pico">◍</span>
+      <h3 class="ptit">Computer Vision Inspection</h3>
+      <p class="pdesc">Applies computer vision to automate inspection tasks and identify visual defects or quality issues.</p>
+      <div class="ptech"><span class="pt">COMPUTER VISION</span><span class="pt">INSPECTION</span><span class="pt">OPENCV</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/NLP-Customer-Support-Chatbot" target="_blank" rel="noopener noreferrer">
+      <div class="pglow gggold"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 15</div>
+      <span class="pico">☰</span>
+      <h3 class="ptit">NLP Customer Support Chatbot</h3>
+      <p class="pdesc">Creates an NLP-powered chatbot for customer support interactions and query resolution.</p>
+      <div class="ptech"><span class="pt">NLP</span><span class="pt">CHATBOT</span><span class="pt">FLASK</span></div>
+    </a><a class="pc compact fade-up" href="https://github.com/darshankurali/Real-Time-Fraud-Detection-System" target="_blank" rel="noopener noreferrer">
+      <div class="pglow ggp"></div>
+      <div class="parrow">↗</div>
+      <div class="pnum">NEW PROJECT / 16</div>
+      <span class="pico">⚡</span>
+      <h3 class="ptit">Real-Time Fraud Detection System</h3>
+      <p class="pdesc">Detects suspicious activity in real time using machine learning and fast decision pipelines.</p>
+      <div class="ptech"><span class="pt">FRAUD DETECTION</span><span class="pt">REAL-TIME ML</span><span class="pt">PYTHON</span></div>
+    </a></div>
+</div></section><section class="certs-s" id="certifications">
   <div class="fade-up">
     <div class="sl2">// 004 &mdash; Credentials</div>
     <h2 class="stitle">Certifications</h2>
@@ -370,7 +538,7 @@
 <footer>
   <span>&copy; 2026 Darshan Bahubali Kurali</span>
   <span>AI &amp; Data Science &middot; Belagavi, Karnataka</span>
-  <span>Crafted with intent ✦</span>
+
 </footer>
 
 <script>
